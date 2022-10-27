@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+/*#4 Фильтрация массива
+Создайте функцию которая в качестве аргумента принимает целое число, и проверяет четное оно или нет.
+Затем создайте произвольный массив целых чисел. И используя функцию проверки числа на четность,
+создайте из готового массива новый, который будет содержать только четные числа. Результат выведите в консоль.*/
+
+
+/*Функция которая ищет четные чила из массива и результат выводит в консоль*/
+const mixedArray = [3,13,74,14,66,15,22,4];
+mixedArray.forEach((val, i) => sort(i, val));
+
+function sort(i) {
+  if(mixedArray[i] % 2 != 0) {
+    console.log();
+  } 
+  else { 
+    console.log(mixedArray[i]);
+  }
+}
+
+
+/*Функцию проверки числа на четность, в произвольном массиве целых чисел
+const isEven = n => { code }*/
+
+/*специально изменил переменные, чтобы два кода работали одновременно*/
+const mixArray = [3,13,74,14,66,15,22,4];
+const isEvens = mixArray.filter(num => num % 2 == 0);
+
+console.log(mixArray, isEvens);
+
+  </script>
+</body>
+</html>
