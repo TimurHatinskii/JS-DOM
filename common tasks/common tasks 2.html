@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    
+/*#2 Выборка объекта
+Сформировать произвольный массив объектов, описывающий, например, работников компании, в каждом объекте должны содержаться сл. свойства 
+(поля) - name (содержащее имя сотрудника) и поле salary (содержащее зарплату сотрудника от 0 до 3000). 
+Сформировать функцию в которую будет передан в качестве аргумента этот массив и возвращен из функции массив содержащий имена всех сотрудников, чья зарплата превышает 1000.*/
+
+const workers = [
+	{"name":"John", "salary":500},
+	{"name":"Mike", "salary":1300},
+	{"name":"Linda", "salary":1500}
+  ],
+
+getWorthyWorkers = [];
+
+    for(i = 0; i < workers.length; i++) {
+      if (workers[i].salary > 1000) {
+        getWorthyWorkers.push(workers[i].name);
+        }
+      }
+
+console.log(getWorthyWorkers);
+
+
+  </script>
+  
+</body>
+</html>
