@@ -12,16 +12,16 @@
 /* #1 Фильтрация строки
 Создать переменную со строковым значением. Сформировать переменную которая будет состоять только из ГЛАСНЫХ букв этой строки. Результат вывести в консоль.*/
 
-var string = 'Привет! как дела?',   /*переменная*/
-    vowels = ['А', 'а', 'О', 'о', 'У', 'у', 'Ы', 'ы', 'Э', 'э', 'Е', 'е', 'Ё', 'ё', 'И', 'и', 'Ю', 'ю', 'Я', 'я'],  /*массив гласных*/
-    getVowels = '';
-for (var i = 0; i < string.length; i++) {
-    var desired = string.charAt(i)
-  if (vowels.indexOf(desired) !== -1) {
+let string = 'Привет! как дела?';   /*переменная*/
+let vowels = ['А', 'а', 'О', 'о', 'У', 'у', 'Ы', 'ы', 'Э', 'э', 'Е', 'е', 'Ё', 'ё', 'И', 'и', 'Ю', 'ю', 'Я', 'я'];  /*массив гласных*/
+let getVowels = '';
+
+  for (let i = 0; i < string.length; i++) {
+    let desired = string.charAt(i)
+    if (vowels.indexOf(desired) !== -1) {
       getVowels = getVowels + desired; 
+    }    
   }
-    
-}
 console.log(getVowels);
     
   </script>  

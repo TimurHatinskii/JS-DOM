@@ -15,21 +15,18 @@
 Сформировать функцию в которую будет передан в качестве аргумента этот массив и возвращен из функции массив содержащий имена всех сотрудников, чья зарплата превышает 1000.*/
 
 const workers = [
-	{"name":"John", "salary":500},
-	{"name":"Mike", "salary":1300},
-	{"name":"Linda", "salary":1500}
-  ],
+  {"name":"John","salary":500},
+  {"name":"Mike","salary":1300},
+  {"name":"Linda","salary":1500}];
 
-getWorthyWorkers = [];
 
-    for(i = 0; i < workers.length; i++) {
-      if (workers[i].salary > 1000) {
-        getWorthyWorkers.push(workers[i].name);
-        }
-      }
 
-console.log(getWorthyWorkers);
+workers.forEach(workers => {
+  if (workers.salary > 1000) {
+    console.log(workers.name)}
+  })
 
+  
 
   </script>
   

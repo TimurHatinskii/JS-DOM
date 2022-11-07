@@ -16,26 +16,25 @@
 
 /*Функция которая ищет четные чила из массива и результат выводит в консоль*/
 const mixedArray = [3,13,74,14,66,15,22,4];
-mixedArray.forEach((val, i) => sort(i, val));
 
-function sort(i) {
-  if(mixedArray[i] % 2 != 0) {
-    console.log();
-  } 
-  else { 
-    console.log(mixedArray[i]);
+const isEven = num => {
+
+  const mixEven = [];  
+
+  for (x in num)
+  {
+
+    if((num[x]%2)==0)
+    mixEven.push(num[x]);  
+
   }
+return mixEven;
 }
 
 
-/*Функцию проверки числа на четность, в произвольном массиве целых чисел
-const isEven = n => { code }*/
+console.log(isEven(mixedArray));
 
-/*специально изменил переменные, чтобы два кода работали одновременно*/
-const mixArray = [3,13,74,14,66,15,22,4];
-const isEvens = mixArray.filter(num => num % 2 == 0);
 
-console.log(mixArray, isEvens);
 
   </script>
 </body>
